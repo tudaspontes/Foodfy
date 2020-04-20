@@ -13,7 +13,7 @@
   </a>
 
   <a href="https://www.linkedin.com/in/felipe-pontes-dev/" >
-    <img alt="My Linkedin" src="https://img.shields.io/badge/">
+   <img alt="My Linkedin" src="https://img.shields.io/badge/-Felipe-%230077B5?style=social&logo=linkedin">
   </a>
 </p>
 
