@@ -1,6 +1,7 @@
 const express = require('express')
 const routes = express.Router()
 const recipes = require("./data")
+const admin = require('./admin')
 
 // setting the routes
 
@@ -28,9 +29,7 @@ routes.get('/admin', function (req, res) {
     res.render('./admin/create')
 })
 
-routes.post('/admin', function (req, res) {
-    res.send('recebido')
-})
+routes.post('/admin', admin.post)
 
 // routes.get("/admin/recipes", recipes.index); // Mostrar a lista de receitas
 // routes.get("/admin/recipes/create", recipes.create); // Mostrar formulário de nova receita

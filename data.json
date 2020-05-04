@@ -1,0 +1,10 @@
+{
+  "recipes": [
+    {
+      "image": "http://google.com",
+      "ingredient": "300g cooked rice",
+      "preparation": "step by step",
+      "information": "this is a vegan recipe"
+    }
+  ]
+}

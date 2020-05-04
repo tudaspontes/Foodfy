@@ -53,6 +53,18 @@ nav a:hover {
   transition: color 200ms;
 }
 
+/* HEADER ADMIN */
+
+.admin {
+  background-color: black;
+  max-width: 100%;
+}
+
+.admin img {
+  margin-left: 241px;
+  margin-bottom: 20px;
+}
+
 /* HOMEPAGE BANNER */
 
 .hero {
@@ -311,10 +323,32 @@ input {
   outline-color: #DDDDDD;
 }
 
+input::placeholder {
+  font-style: italic;
+  color: lightgray;
+}
+
 
 form .create_recipe {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
+form button[type=submit] {
+  background-color: #6558C3;
+  padding: 8px 32px;
+  color: white;
+  border-radius: 4px;
+  margin-top: 52px;
+  width: 100%;
+  max-width: 160px;
+  max-height: 37px;
+  font-size: 16px;
+  grid-column-end: none;
+  font-weight: bold;
+
+}
+.item input[name="information"] {
+  height: 257px;
+}
 
