@@ -278,3 +278,43 @@ ul.hide,
 p.hide {
   display: none;
 }
+
+/* === FORM === */
+
+form h3 {
+  margin-bottom: 30px;
+  margin-top: 55px;
+  font-size: 24px;
+}
+
+.item {
+  
+  padding: 16px 0;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.item a {
+  text-decoration: none;
+}
+
+input {
+  width: 100%;
+  color: #555;
+  font-weight: normal;
+  font-size: 16px;
+  padding: 15px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  outline-style: ridge;
+  outline-width: thin;
+  outline-color: #DDDDDD;
+}
+
+
+form .create_recipe {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+

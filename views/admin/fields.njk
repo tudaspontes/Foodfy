@@ -1,0 +1,55 @@
+
+<div class="item">
+    <div>Recipe's image</div>
+    <div>
+        <input 
+            type="url" 
+            name="image" 
+            placeholder="put here the url of the image"
+            value="{{ admin.recipe_image}}"    
+        >
+    </div>
+</div>
+
+<div class="item">
+    <div>Ingredients</div>
+    <div>
+        <input 
+            type="text" 
+            name="ingredient" 
+            placeholder="ex: 300g of cooked rice"
+            value="{{ admin.ingredient}}"    
+        >
+    </div>
+    <a href="/">Add new ingredient</a>
+</div>
+
+
+<div class="item">
+    <div>Meal prep</div>
+    <div>
+        <input 
+            type="text" 
+            name="preparation" 
+            placeholder="step by step"
+            value="{{ admin.preparation}}"    
+        >
+        <a href="/">Add new step</a>
+    </div>
+    
+</div>
+
+<div class="item">
+    <div>Additional information</div>
+    <div>
+        <input 
+            type="text" 
+            name="information" 
+            placeholder="put here some useful info about the recipe"
+            value="{{ admin.info}}"    
+        >
+    </div>
+</div>
+
+
+
