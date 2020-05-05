@@ -1,6 +1,6 @@
 const fs = require('fs')
 const data = require('./data.json')
-
+const recipes = require("./data")
 //create
 
 exports.post = function (req, res) {
@@ -11,7 +11,9 @@ exports.post = function (req, res) {
             return res.send('Please fill all fields')
         }
     }
-
+    
+    req.body.id = Number(data.recipes.length + 1)
+    
     data.recipes.push(req.body)
 
 
@@ -20,4 +22,17 @@ exports.post = function (req, res) {
 
         return res.redirect("/admin")
     })
+}
+
+//show
+
+exports.show = function (req, res) {
+    
+    const { id } = req.params
+
+    const foundRecipe = data.recipes.find(function(recipe){
+        return recipe.id == id
+    })
+
+    if (!foundRecipe) res.render('admin/show', {recipes})
 }
