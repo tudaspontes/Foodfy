@@ -1,7 +1,7 @@
 const express = require('express')
 const routes = express.Router()
-const recipes = require("./data")
-const admin = require('./admin')
+const admin = require('.//controllers/admin')
+const recipes = require('./data')
 
 // setting the routes
 
@@ -25,11 +25,13 @@ routes.get('/recipes/:id', function(req, res) {
     res.render('./admin/recipe', { recipe: recipes[id] })
 })
 
-routes.get('/admin', function (req, res) {
+routes.get('/create', function (req, res) {
     res.render('./admin/create')
 })
 
 routes.post('/admin', admin.post)
+
+routes.get('/show', admin.show)
 
 routes.get('/admin/:id', admin.show)
 

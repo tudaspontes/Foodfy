@@ -1,4 +1,4 @@
-{% extends 'layout.njk' %}
+{% extends 'layout-admin.njk' %}
 
 {% block head %}
   <title>Recipes</title>
@@ -11,8 +11,8 @@
 
       {% for recipe in recipes %}
 
-        <div class="card" data-id="{{ loop.index }}">
-          <img src="{{ recipe.image }}" alt="{{ recipe.title }}">
+        <div class="card">
+          <img src="{{ recipes.image }}" alt="{{ recipes.title }}">
           <div class="card-info">
             <h4>{{ recipe.title }}</h4>
             <p>by {{ recipe.author}}</p>
@@ -20,19 +20,6 @@
         </div>
 
       {% endfor %}
-
-      {% for recipe in recipes %}
-
-        <div class="card" data-id="{{ loop.index }}">
-          <img src="{{ recipe.image }}" alt="{{ recipe.title }}">
-          <div class="card-info">
-            <h4>{{ recipe.title }}</h4>
-            <p>by {{ recipe.author}}</p>
-          </div>
-        </div>
-
-      {% endfor %}
-
     </div>
   </main>
 
