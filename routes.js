@@ -1,40 +1,24 @@
 const express = require('express')
+
+const user = require('./controllers/user')
+const admin = require('./controllers/admin')
+
 const routes = express.Router()
-const admin = require('.//controllers/admin')
-const recipes = require('./data')
 
-// setting the routes
+// users routes
 
-routes.get('/', function(req, res) {
-    const featuredRecipes = recipes.slice(0, 6);
+routes.get('/', user.index);
+routes.get('/about', user.about);
+routes.get('/recipes', user.recipes);
+routes.get('/recipes/:id', user.recipesId);
 
-    res.render('./admin/index', { recipes: featuredRecipes});
-});
+// admin routes
 
-routes.get('/about', function(req, res) {
-    res.render('./admin/about');
-});
+routes.get('/create', admin.create);
+routes.get('/show', admin.show);
+routes.get('/admin/:id', admin.show);
 
-routes.get('/recipes', function(req, res) {
-    res.render('./admin/recipes', { recipes });
-});
-
-routes.get('/recipes/:id', function(req, res) {
-    const id = req.params.id;
-
-    res.render('./admin/recipe', { recipe: recipes[id] })
-})
-
-routes.get('/create', function (req, res) {
-    res.render('./admin/create')
-})
-
-routes.post('/admin', admin.post)
-
-routes.get('/show', admin.show)
-
-routes.get('/admin/:id', admin.show)
-
+routes.post('/admin', admin.post);
 // routes.get("/admin/recipes", recipes.index); // Mostrar a lista de receitas
 // routes.get("/admin/recipes/create", recipes.create); // Mostrar formulário de nova receita
 // routes.get("/admin/recipes/:id", recipes.show); // Exibir detalhes de uma receita

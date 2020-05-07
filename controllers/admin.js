@@ -1,7 +1,7 @@
 const fs = require('fs')
 const data = require('../data.json')
 const recipes = require("../data.json")
-//create
+//post
 
 exports.post = function (req, res) {
     const keys = Object.keys(req.body)
@@ -22,6 +22,12 @@ exports.post = function (req, res) {
 
         return res.redirect("/create")
     })
+}
+
+//create
+
+exports.create = function (req, res) {
+    res.render('./admin/create')
 }
 
 //show
