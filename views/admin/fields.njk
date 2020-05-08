@@ -6,7 +6,7 @@
             type="url" 
             name="image" 
             placeholder="put here the url of the image"
-            value="{{ admin.recipe_image}}"    
+            value="{{ recipe.image}}"    
         >
     </div>
 </div>
@@ -18,7 +18,7 @@
             type="text" 
             name="name" 
             placeholder="ex: 300g of cooked rice"
-            value="{{ admin.name}}"    
+            value="{{ recipe.name}}"    
         >
     </div>
 </div>
@@ -30,7 +30,7 @@
             type="text" 
             name="author" 
             placeholder="ex: 300g of cooked rice"
-            value="{{ admin.author }}"    
+            value="{{ recipe.author }}"    
         >
     </div>
 </div>
@@ -42,7 +42,7 @@
             <input
                 type="text"
                 name="ingredients[]"
-                value="{{ admin.ingredient }}"
+                value="{{ recipe.ingredients }}"
                 placeholder="Ingredient"
             />
         </div>
@@ -58,7 +58,7 @@
             type="text" 
             name="preparation" 
             placeholder="step by step"
-            value="{{ admin.preparation}}"    
+            value="{{ recipe.preparation}}"    
         >
         <a href="/">Add new step</a>
     </div>
@@ -72,7 +72,7 @@
             type="text" 
             name="information" 
             placeholder="put here some useful info about the recipe"
-            value="{{ admin.info}}"    
+            value="{{ recipe.information }}"    
         >
     </div>
 </div>

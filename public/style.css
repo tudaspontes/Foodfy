@@ -334,7 +334,8 @@ form .create_recipe {
   grid-template-columns: 1fr 1fr;
 }
 
-form button[type=submit] {
+form button[type=submit],
+a.button {
   background-color: #6558C3;
   padding: 8px 32px;
   color: white;
@@ -348,6 +349,19 @@ form button[type=submit] {
   font-weight: bold;
 
 }
+
+form button[id=delete],
+a.button {
+  background-color: coral;
+}
+
 .item input[name="information"] {
   height: 257px;
+}
+
+a.button {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 10px;
 }
