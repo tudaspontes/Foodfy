@@ -10,13 +10,14 @@ const routes = express.Router()
 routes.get('/', user.index);
 routes.get('/about', user.about);
 routes.get('/recipes', user.recipes);
-routes.get('/recipes/:id', user.recipesId);
+routes.get('/recipes/:id', user.recipe);
 
 // admin routes
 
+routes.get('/index', admin.index);
 routes.get('/create', admin.create);
-routes.get('/show', admin.show);
-routes.get('/admin/:id', admin.show);
+routes.get('/show/:id', admin.show);
+routes.get('/show/:id/edit', admin.edit);
 
 routes.post('/admin', admin.post);
 // routes.get("/admin/recipes", recipes.index); // Mostrar a lista de receitas

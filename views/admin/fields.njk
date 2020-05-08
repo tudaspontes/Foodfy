@@ -12,16 +12,42 @@
 </div>
 
 <div class="item">
-    <div>Ingredients</div>
+    <div>Recipe's name</div>
     <div>
         <input 
             type="text" 
-            name="ingredient" 
+            name="name" 
             placeholder="ex: 300g of cooked rice"
-            value="{{ admin.ingredient}}"    
+            value="{{ admin.name}}"    
         >
     </div>
-    <a href="/">Add new ingredient</a>
+</div>
+
+<div class="item">
+    <div>Author</div>
+    <div>
+        <input 
+            type="text" 
+            name="author" 
+            placeholder="ex: 300g of cooked rice"
+            value="{{ admin.author }}"    
+        >
+    </div>
+</div>
+
+<div class="item">
+    <div id="ingredients">
+        <div>Ingredients</div>
+        <div class="ingredient">
+            <input
+                type="text"
+                name="ingredients[]"
+                value="{{ admin.ingredient }}"
+                placeholder="Ingredient"
+            />
+        </div>
+    </div>
+        <button type="button" class="add-ingredient">Add Ingredient</button>
 </div>
 
 
