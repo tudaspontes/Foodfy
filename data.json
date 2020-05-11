@@ -1,10 +1,10 @@
 {
   "recipes": [
     {
-      "id": 1,
+      "id": "1",
       "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png",
       "name": "Triplo bacon burger",
-      "author": "Jorge Detal",
+      "author": "Jorge Detalo1",
       "ingredients": [
         "Soja"
       ],

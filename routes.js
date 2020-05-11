@@ -20,6 +20,7 @@ routes.get('/show/:id', admin.show);
 routes.get('/show/:id/edit', admin.edit);
 
 routes.post('/admin', admin.post);
+routes.put('/admin', admin.put)
 // routes.get("/admin/recipes", recipes.index); // Mostrar a lista de receitas
 // routes.get("/admin/recipes/create", recipes.create); // Mostrar formulário de nova receita
 // routes.get("/admin/recipes/:id", recipes.show); // Exibir detalhes de uma receita

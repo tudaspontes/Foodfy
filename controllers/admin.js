@@ -60,3 +60,35 @@ exports.edit = function (req, res) {
     return res.render('admin/edit', {recipe: foundRecipe});
 
 }
+
+exports.put = function (req, res) {
+ 
+    const { id } = req.body
+
+    let index = 0;
+
+    const foundRecipe = data.recipes.find(function(recipe, foundIndex) {
+        if(id == recipe.id) {
+            index = foundIndex
+            return true
+        }
+    })
+
+    // const foundRecipe = data.recipes[id -1];
+
+    if (!foundRecipe) return res.send('recipe not found');
+
+    const recipe = {
+        ...foundRecipe,
+        ...req.body
+    }
+
+    data.recipes[index] = recipe;
+
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), function (err) {
+        if(err) return res.send("Write error")
+    })
+
+    return res.redirect(`/show/${id}`);
+
+}
