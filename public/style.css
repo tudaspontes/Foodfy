@@ -365,3 +365,7 @@ a.button {
   text-decoration: none;
   margin-bottom: 10px;
 }
+
+form button:hover {
+  cursor: pointer;
+}

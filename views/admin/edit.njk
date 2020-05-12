@@ -8,11 +8,16 @@
         <h3>Edit recipe</h3>
 
         <button type="submit" id="save">Save Recipe</button>
-        <button type="submit" id="delete">Delete</button>
+       
+        </form>
         </div>
         {% include 'admin/fields.njk'%}
 
         <input type="hidden" name="id" value={{recipe.id}}>
+
+         <form action="/admin?_method=DELETE" method="POST">
+        <input type="hidden" name="id" value={{recipe.id}}>
+        <button type="submit" id="delete">Delete</button>
 
     </section>
 

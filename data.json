@@ -1,26 +1,3 @@
 {
-  "recipes": [
-    {
-      "id": "1",
-      "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png",
-      "name": "Triplo bacon burger",
-      "author": "Jorge Detalo1",
-      "ingredients": [
-        "Soja"
-      ],
-      "preparation": "Misture todos os ingredientes muito bem e amasse para que fique tudo muito bem misturado.",
-      "information": "Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres! \\n\\n Você sabia que a receita que precede o hambúrguer surgiu no século XIII, na Europa? A ideia de moer a carne chegou em Hamburgo no século XVII, onde um açogueiro resolveu também temperá-la. Assim, a receita foi disseminada nos Estados Unidos por alemães da região. Lá surgiu a ideia de colocar o hambúrguer no meio do pão e adicionar outros ingredientes, como queijo tomates e alface."
-    },
-    {
-      "id": "1",
-      "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png",
-      "name": "Triplo bacon burger",
-      "author": "Jorge Detal",
-      "ingredients": [
-        "Soja"
-      ],
-      "preparation": "Misture todos os ingredientes muito bem e amasse para que fique tudo muito bem misturado.",
-      "information": "Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres! \\n\\n Você sabia que a receita que precede o hambúrguer surgiu no século XIII, na Europa? A ideia de moer a carne chegou em Hamburgo no século XVII, onde um açogueiro resolveu também temperá-la. Assim, a receita foi disseminada nos Estados Unidos por alemães da região. Lá surgiu a ideia de colocar o hambúrguer no meio do pão e adicionar outros ingredientes, como queijo tomates e alface."
-    }
-  ]
+  "recipes": []
 }
