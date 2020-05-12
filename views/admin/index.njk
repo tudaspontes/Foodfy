@@ -5,12 +5,12 @@
   <main class="container">
     <h2>Manage recipes</h2>
 
-    <div class="recipes">
+    <div class="recipes-admin">
 
       {% for recipe in recipes %}
 
-        <div class="recipe">
-          <img src="{{ recipe.image }}" alt="{{ recipe.title }}">
+        <div class="recipe-admin">
+          <a href="show/{{recipe.id}}"><img src="{{ recipe.image }}" alt="{{ recipe.title }}"></a>
           <div class="card-info">
             <h4>{{ recipe.title }}</h4>
             <p>by {{ recipe.author }}</p>

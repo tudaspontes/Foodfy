@@ -369,3 +369,7 @@ a.button {
 form button:hover {
   cursor: pointer;
 }
+
+.recipe-admin:hover {
+  cursor: pointer;
+}
