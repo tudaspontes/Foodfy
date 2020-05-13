@@ -370,6 +370,42 @@ form button:hover {
   cursor: pointer;
 }
 
+/* MANAGE RECIPES */
+
 .recipe-admin:hover {
   cursor: pointer;
+  opacity: 0.9;
+}
+
+.recipes-admin {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.recipe-admin {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px
+}
+
+.recipe-admin img {
+  width: 172px;
+  height: 80px;
+  border-radius: 8px;
+  margin-bottom: 40px;  
+  object-fit: cover;
+}
+
+.recipe-admin .recipe-admin__info h4 {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.recipe-admin .recipe-admin__info p {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  line-height: 16px;
 }

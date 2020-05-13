@@ -11,9 +11,10 @@
 
         <div class="recipe-admin">
           <a href="show/{{recipe.id}}"><img src="{{ recipe.image }}" alt="{{ recipe.title }}"></a>
-          <div class="card-info">
-            <h4>{{ recipe.title }}</h4>
+          <div class="recipe-admin__info">
+            <h4>{{ recipe.name }}</h4>
             <p>by {{ recipe.author }}</p>
+            <span>View</span>
           </div>
         </div>
 
