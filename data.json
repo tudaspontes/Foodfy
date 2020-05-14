@@ -1,12 +1,14 @@
 {
   "recipes": [
     {
-      "id": 1,
+      "id": "1",
       "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png",
       "name": "Triplo bacon burger",
       "author": "Jorge Detal",
       "ingredients": [
-        "Soja"
+        "Soja",
+        "Força",
+        ""
       ],
       "preparation": "step by step",
       "information": "this is a vegan recipe"
@@ -20,6 +22,30 @@
         "Pizza"
       ],
       "preparation": "step by step",
+      "information": "another vegan meal"
+    },
+    {
+      "id": 3,
+      "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/lasanha.png",
+      "name": "Lasanha mac n' cheese",
+      "author": "Juliano Vieira",
+      "ingredients": [
+        "Soja"
+      ],
+      "preparation": "Step",
+      "information": "another vegan meal"
+    },
+    {
+      "id": 4,
+      "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/macarrao.png",
+      "name": "Garlic Spaghetti",
+      "author": "Júlia Kinoto",
+      "ingredients": [
+        "Some stuff"
+      ],
+      "preparation": [
+        "Some"
+      ],
       "information": "another vegan meal"
     }
   ]

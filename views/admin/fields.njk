@@ -44,7 +44,7 @@
                 name="ingredients[]"
                 value="{{ recipe.ingredients }}"
                 placeholder="Ingredient"
-            />
+            >
         </div>
     </div>
         <button type="button" class="add-ingredient">Add Ingredient</button>
@@ -52,17 +52,18 @@
 
 
 <div class="item">
-    <div>Meal prep</div>
-    <div>
-        <input 
-            type="text" 
-            name="preparation" 
-            placeholder="step by step"
-            value="{{ recipe.preparation}}"    
-        >
-        <a href="/">Add new step</a>
+    <div id="directions">
+        <div>Steps</div>
+        <div class="direction">
+            <input
+                type="text"
+                name="preparation[]"
+                value="{{ recipe.preparation }}"
+                placeholder="Preparation"
+            >
+        </div>
     </div>
-    
+        <button type="button" class="add-step">Add Step</button>
 </div>
 
 <div class="item">
@@ -77,5 +78,6 @@
     </div>
 </div>
 
+<script src="/script.js"></script>
 
 

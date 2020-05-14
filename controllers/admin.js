@@ -30,12 +30,12 @@ exports.post = function (req, res) {
     fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
         if(err) return res.send("Write file error")
 
-        return res.redirect('/index')
+        return res.redirect('/admin/recipes')
     })
 }
 
 exports.create = function (req, res) {
-    res.render('./admin/create')
+    res.render('admin/create')
 }
 
 exports.show = function (req, res) {
@@ -89,7 +89,7 @@ exports.put = function (req, res) {
         if(err) return res.send("Write error")
     })
 
-    return res.redirect(`/show/${id}`);
+    return res.redirect(`/admin/recipes/${id}`);
 
 }
 

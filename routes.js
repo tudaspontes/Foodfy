@@ -14,10 +14,10 @@ routes.get('/recipes/:id', user.recipe);
 
 // admin routes
 
-routes.get('/index', admin.index);
-routes.get('/create', admin.create);
-routes.get('/show/:id', admin.show);
-routes.get('/show/:id/edit', admin.edit);
+routes.get('/admin/recipes', admin.index);
+routes.get('/admin/recipes/create', admin.create);
+routes.get('/admin/recipes/:id', admin.show);
+routes.get('/admin/recipes/:id/edit', admin.edit);
 
 routes.post('/admin', admin.post);
 routes.put('/admin', admin.put);

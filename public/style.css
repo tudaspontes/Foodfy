@@ -284,6 +284,7 @@ p.hide {
 .admin {
   background-color: black;
   max-width: 100%;
+  margin: 0 auto 32px;
 }
 
 .admin img {
@@ -380,7 +381,6 @@ form button:hover {
 .recipes-admin {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
 }
 
 .recipe-admin {
@@ -404,8 +404,14 @@ form button:hover {
   margin-bottom: 5px;
 }
 
-.recipe-admin .recipe-admin__info p {
+.recipe-admin .recipe-admin__info p, span {
   color: var(--color-text-secondary);
   font-size: 14px;
   line-height: 16px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.recipe-admin .recipe-admin__info span {
+  margin-top: 10px;
 }
