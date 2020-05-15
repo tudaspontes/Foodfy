@@ -1,19 +1,6 @@
 {
   "recipes": [
     {
-      "id": "1",
-      "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png",
-      "name": "Triplo bacon burger",
-      "author": "Jorge Detal",
-      "ingredients": [
-        "Soja",
-        "Força",
-        ""
-      ],
-      "preparation": "step by step",
-      "information": "this is a vegan recipe"
-    },
-    {
       "id": 2,
       "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/pizza.png",
       "name": "Pizza 4 Seasons",
@@ -32,8 +19,50 @@
       "ingredients": [
         "Soja"
       ],
-      "preparation": "Step",
+      "preparation": [
+        "Step"
+      ],
       "information": "another vegan meal"
+    },
+    {
+      "id": 1,
+      "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png",
+      "name": "Triplo bacon burger",
+      "author": "Jorge Detal",
+      "ingredients": [
+        "Soja"
+      ],
+      "preparation": [
+        "step by step"
+      ],
+      "information": "another vegan meal"
+    },
+    {
+      "id": 4,
+      "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/macarrao.png",
+      "name": "Garlic Spaghetti",
+      "author": "Fabiana Melo",
+      "ingredients": [
+        "Garlic"
+      ],
+      "preparation": [
+        "Boil the water"
+      ],
+      "information": "another vegan meal"
+    },
+    {
+      "id": 5,
+      "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/doce.png",
+      "name": "Heaven loaf",
+      "author": "Ricardo Golvea",
+      "ingredients": [
+        "1kg sweet potato"
+      ],
+      "preparation": [
+        "Step 1",
+        "Step 2"
+      ],
+      "information": "this is a vegan recipe"
     }
   ]
 }

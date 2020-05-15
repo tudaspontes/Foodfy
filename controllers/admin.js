@@ -14,18 +14,23 @@ exports.post = function (req, res) {
         }
     }
     
-    let id = 1;
+    let { image, name, author, ingredients, preparation, information } = req.body
 
-    const lastRecipe = data.recipes[data.recipes.length - 1];
+    // data processing - const id was not created before in the body, so we have to create it here
 
-    if (lastRecipe) {
-        id = lastRecipe.id + 1;
-    }
+    const id = Number(data.recipes.length + 1)
+    
+    // getting data and putting inside the admin.js
 
     data.recipes.push({
         id,
-        ...req.body
-    });
+        image,
+        name,
+        author,
+        ingredients,
+        preparation,
+        information,
+    })
 
     fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
         if(err) return res.send("Write file error")
